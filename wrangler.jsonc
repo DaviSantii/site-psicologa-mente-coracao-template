@@ -1,0 +1,9 @@
+{
+  // site estático: o Worker só serve os arquivos de dist/ (cabeçalhos de cache em public/_headers)
+  "name": "site-psicologa-mente-coracao-template",
+  "compatibility_date": "2026-11-13",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

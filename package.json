@@ -1,0 +1,25 @@
+{
+  "name": "site-psicologa-mente-coracao-template",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5174",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 4174 --strictPort",
+    "test": "vitest run",
+    "deploy": "npm run build && npx wrangler@4 deploy",
+    "test:e2e": "playwright test",
+    "quadros": "bash scripts/extrair-quadros.sh"
+  },
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "lenis": "^1.3.27"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}
